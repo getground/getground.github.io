@@ -10,6 +10,47 @@ $(document).ready(function(){
     )
     wow.init();
 
+    $('.interest-form').submit(function(e) {
+      var that = this;
+      e.preventDefault();
+
+      var data = {};
+      data.firstname = $(this).find('input[name="firstname"]').val();
+      data.lastname = $(this).find('input[name="lastname"]').val();
+      data.email = $(this).find('input[name="email"]').val();
+      data.phone = $(this).find('input[name="phone"]').val();
+      data.profession = $(this).find('input[name="profession"]').val();
+      data.comment = $(this).find('textarea[name="comment"]').val();
+      // console.log(data);
+
+      // function setHeader(xhr) {
+      //   return;
+      //   xhr.setRequestHeader('Authorization', token);
+      // }
+
+      $.ajax({
+        type: "POST",
+        crossDomain: true,
+        url: "https://getground-internal-backend.appspot.com/interested",
+        data: JSON.stringify(data),
+        success: function() {
+         $(that).hide();
+         $('.thank-you').show();
+         console.log('success');
+        },
+        dataType: 'json',
+        // beforeSend: setHeader,
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.log(jqXHR);
+          console.log(textStatus);
+          console.log(errorThrown);
+        }
+      });
+
+
+
+    });
+
      $('#top-nav').onePageNav({
         currentClass: 'current',
         changeHash: true,
