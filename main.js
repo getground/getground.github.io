@@ -15,23 +15,35 @@ $(document).ready(function(){
       e.preventDefault();
 
       var data = {};
-      data.firstname = $(this).find('input[name="firstname"]').val();
-      data.lastname = $(this).find('input[name="lastname"]').val();
-      data.email = $(this).find('input[name="email"]').val();
-      data.phone = $(this).find('input[name="phone"]').val();
-      data.profession = $(this).find('input[name="profession"]').val();
-      data.comment = $(this).find('textarea[name="comment"]').val();
+      data.firstname = $(that).find('input[name="firstname"]').val();
+      data.lastname = $(that).find('input[name="lastname"]').val();
+      data.email = $(that).find('input[name="email"]').val();
+      data.phone = $(that).find('input[name="phone"]').val();
+      data.profession = $(that).find('input[name="profession"]').val();
+      data.comment = $(that).find('textarea[name="comment"]').val();
       // console.log(data);
 
-      // function setHeader(xhr) {
-      //   return;
-      //   xhr.setRequestHeader('Authorization', token);
-      // }
+      const AUTH_TOKEN = "823DE944E35B1A9A767D1E888F2F1";
+      //const URL_ROOT = "http://localhost:8080/";
+      const URL_ROOT = "https://getground-internal-backend.appspot.com/";
+
+      function setHeader(xhr) {
+         xhr.setRequestHeader('Authorization', AUTH_TOKEN);
+      }
+
+
 
       $.ajax({
         type: "POST",
         crossDomain: true,
-        url: "https://getground-internal-backend.appspot.com/interested",
+        /*xhrFields: {
+          withCredentials: true
+        },
+        headers: {
+          "accept": "application/json",
+          "Access-Control-Allow-Origin":"*"
+        },*/
+        url: URL_ROOT+"api/v1/interested",
         data: JSON.stringify(data),
         success: function() {
          $(that).hide();
@@ -39,7 +51,7 @@ $(document).ready(function(){
          console.log('success');
         },
         dataType: 'json',
-        // beforeSend: setHeader,
+        beforeSend: setHeader,
         error: function(jqXHR, textStatus, errorThrown) {
           console.log(jqXHR);
           console.log(textStatus);
