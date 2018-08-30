@@ -371,20 +371,20 @@
                                   <form class="interest-form">
                                     <div class="form-row">
                                       <div class="col">
-                                        <input name="firstname" required type="text" class="form-control" placeholder="First name">
+                                        <input name="firstname" pattern=".{2,}" title="2 characters minimum" required type="text" class="form-control" placeholder="First name">
                                       </div>
                                       <div class="col">
-                                        <input name="lastname" required type="text" class="form-control" placeholder="Last name">
+                                        <input name="lastname"  pattern=".{2,}" title="2 characters minimum" required type="text" class="form-control" placeholder="Last name">
                                       </div>
                                     </div>
 
                                     <input name="email" required type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
-                                    <input name="phone" type="text" class="form-control" placeholder="Phone (optional)">
+                                    <input name="phone" type="tel" class="form-control" placeholder="Phone (optional)">
 
-                                    <input name="profession" required type="text" class="form-control" placeholder="Profession">
+                                    <input name="profession" required  pattern=".{3,}" title="3 characters minimum" type="text" class="form-control" placeholder="Profession">
                                     <textarea name="comment" class="form-control" placeholder="Any other comments (optional)"></textarea>
 
-                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    <button type="submit" class="btn btn-success">Register Interest</button>
                                   </form>
                                   <div class="thank-you alert-success">
                                     Thank you for registering your interest
