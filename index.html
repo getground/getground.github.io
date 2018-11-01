@@ -33,10 +33,10 @@
 
         <!-- CSS -->
 
-        <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="font-awesome.min.css">
         <link rel="stylesheet" href="owl.carousel.css">
         <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
         <!-- Responsive Stylesheet -->
         <link rel="stylesheet" href="responsive.css">
@@ -49,19 +49,6 @@
             list-style-type: square;
             list-style-position: inside;
           }
-
-          .big-space-top {
-            margin-top: 30px;
-          }
-
-          .medium-space-top {
-            margin-top: 15px;
-          }
-
-          .left-right-space {
-            margin: 0 5px;
-          }
-
           .omni-space {
             margin: 15px 5px;
           }
@@ -70,61 +57,93 @@
 
     <body id="body">
 
-    	<!-- <div id="preloader">
-    		<div class="book">
-    		  <div class="book__page"></div>
-    		  <div class="book__page"></div>
-    		  <div class="book__page"></div>
-    		</div>
-    	</div> -->
 
-	    <!--
-	    Header start
-	    ==================== -->
-	    <div class="navbar-default navbar-fixed-top" id="navigation">
-	        <div class="container">
-	            <!-- Brand and toggle get grouped for better mobile display -->
-	            <div class="navbar-header">
-	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                </button>
-	                <!-- <a class="navbar-brand" href="#">
-                        <img style="width: 300px;" class="logo-1" src="images/icon-less-padding.png" alt="LOGO">
-	                       <img class="logo-2" src="images/logo-2.png" alt="LOGO">
-	                </a> -->
-	            </div>
-
-	            <!-- Collect the nav links, forms, and other content for toggling -->
-	            <nav class="collapse navbar-collapse" id="navbar">
-	                <ul class="nav navbar-nav navbar-right" id="top-nav">
-	                    <li class="current"><a href="#body">Home</a></li>
-	                    <li><a href="#about">About us</a></li>
-	                    <!-- <li><a href="#service">Services</a></li> -->
-	                    <li><a href="#contact">Contact</a></li>
-	                </ul>
-	            </nav><!-- /.navbar-collapse -->
-	        </div><!-- /.container-fluid -->
-	    </div>
 
 	    <section id="hero-area">
 	        <div class="container">
-	            <div class="row">
-	                <div class="col-md-12">
-	                    <div class="block">
-                        <img style="width: 50%;" class="logo-1" src="images/text-trimmed.png" alt="LOGO">
-	                        <!-- <p class="wow fadeInDown" data-wow-delay="0.3s">Bringing property transactions down to earth</p> -->
+            <div class="row">
+                <div class="col-md-6">
+                  <img style="height: 50px;" src="images/text-trimmed.png" alt="LOGO">
+                </div>
+                <div class="col-md-6">
+                  <div style="text-align: right;">
+                    <button type="button" class="btn btn-primary">GET STARTED</button>
+                    <p class="call-us">Or call us at <a href="tel:+44123123123">+44 12312 123TODO</a></p>
+                  </div>
+                </div>
+              </div>
+	            <div class="row" style="margin-top: 30px;">
+	                <div class="col-md-6">
 
+                    <h2 style="margin-top: 90px;">Have a buy-to-let property you want to purchase?</h2>
+                    <h2 style="margin-top: 30px;">We'll make it easier and more profitable for you to do so.</h2>
 
-                          <h2 style="margin: 30px 0;">bringing property transactions down to earth<h2>
+                    <p class="bCOsdwa">
+                        We set up a tax efficient UK Limited company for you to buy the property.
+                        We also organise mortgage financing that is guaranteed to beat the best interest rate in the market by 0.5%.
+                        And we do all of your accounting, legal and tax work.
+                        You choose which property to buy, own 100% of it and have full control.
+                    </p>
 
-                          <div class="wow fadeInDown" data-wow-delay="0.3s">
-	                        	<a class="btn btn-default btn-home" href="#about" role="button">Learn More</a>
-	                        </div>
-	                    </div>
 	                </div>
+                  <div class="col-md-6">
+
+
+
+                    <!-- calculator -->
+                    <div class="calculator">
+                      <!-- style="margin-top: 90px;" -->
+                      <h3 >Find out how much we can save you</h3>
+
+
+                      <form>
+                        <div class="form-group form-inline">
+                            <label>Property value</label>
+                            <div style="float: right; width: 258px;" class="input-group mb-3">
+                              <div class="input-group-addon">
+                                <span class="input-group-text">£</span>
+                              </div>
+                              <input type="number" id="property-value-input" class="form-control text-left" value="250000">
+                              <!-- <div class="invalid-feedback">
+                                This should be the intended price of the property, in pounds sterling.
+                              </div> -->
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Loan-to-value</label>
+                            <div style="float: right; width: 258px;" class="input-group mb-3">
+                              <input type="number" id="ltv-input" class="form-control text-right" value="75">
+                              <div class="input-group-addon">
+                                <span class="input-group-text">%</span>
+                              </div>
+                              <!-- <div class="invalid-feedback">
+                                This should be a value between 0-100.
+                              </div> -->
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 25px;" class="form-group form-inline">
+                            <label>Your UK income tax bracket</label>
+                            <div style="float: right; width: 258px;" class="input-group mb-3">
+                              <select id="tax-bracket-select" class="form-control">
+                                <option value="0" selected>Higher rate</option>
+                                <option value="1">Additional rate</option>
+                                <option value="2">Basic rate</option>
+                              </select>
+                            </div>
+                        </div>
+                        <hr />
+                        <div style="margin-top: 25px; font-size: 1.25em;" class="form-group form-inline">
+                            <label>Savings over 5 years</label>
+                            <div style="float: right; width: 258px;" class="input-group mb-3">
+                              <div class="alert alert-success text-center" role="alert">
+                                £40,000
+                              </div>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+
+                  </div>
 
 	            </div><!-- .row close -->
 	        </div><!-- .container close -->
@@ -132,286 +151,45 @@
 
 
 
-        <!--
-        About start
-        ==================== -->
-        <section id="about" class="section">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <h3>
-                    getGround is massively reducing the cost and increasing the speed to transact property in the UK buy-to-let market.
-                    Meet our team.
-                  </h3>
-                </div>
-              </div>
 
-
-                <!-- image row -->
-                <!-- <div class="row big-space-top">
-                  <div class="col-md-6">
-                    <img style="height: 100px;" src="images/about/moubin.jpeg" />
-                    <img class="left-right-space" style="margin-left: 30px; width: 120px;" src="images/about/icl.png" />
-                    <img class="left-right-space" style="width: 120px;" src="images/about/apax.png" />
-                    <img class="left-right-space" style="width: 120px;" src="images/about/mckinsey.png" />
-                  </div>
-                  <div class="col-md-6">
-                    <img style="height: 100px;" src="images/about/misrab.png" />
-                    <img class="left-right-space" style="margin-left: 30px; width: 60px;" src="images/about/stanford.png" />
-                    <img class="left-right-space" style="width: 100px;" src="images/about/gojek.png" />
-                    <img class="left-right-space" style="width: 100px;" src="images/about/trip.png" />
-                    <img class="left-right-space" style="width: 100px;" src="images/about/ga.png" />
-                  </div>
-                </div> -->
-
-                <div class="row medium-space-top">
-                  <div class="col-md-6">
-
-
-                      <div>
-                        <img class="omni-space" style="height: 100px;" src="images/about/moubin.jpeg" />
-                        <img class="omni-space" style="margin-left: 30px; width: 120px;" src="images/about/icl.png" />
-                        <img class="omni-space" style="width: 120px;" src="images/about/apax.png" />
-                        <img class="omni-space" style="width: 120px;" src="images/about/mckinsey.png" />
-                      </div>
-
-                      <div><h4>Moubin</h4></div>
-
-
-                      <div>
-                        <ul>
-                          <li>
-                            VP at Apax partners with significant investing experience, having been involved in numerous key transactions
-                          </li>
-                          <li>
-                            Engagement manager at McKinsey &amp; Co, promoted on accelerated trajectory from analyst to manager
-                          </li>
-                          <li>
-                            Medical doctor by training, and selected as one of the top fifty students in the world as a Goldman Sachs Global leader scholar
-                          </li>
-                        </ul>
-                      </div>
-
-                  </div>
-
-                  <div class="col-md-6">
-
-                    <div>
-                      <img class="omni-space" style="height: 100px;" src="images/about/misrab.png" />
-                      <img class="omni-space" style="margin-left: 30px; width: 60px;" src="images/about/stanford.png" />
-                      <img class="omni-space" style="width: 100px;" src="images/about/gojek.png" />
-                      <img class="omni-space" style="width: 100px;" src="images/about/trip.png" />
-                      <img class="omni-space" style="width: 100px;" src="images/about/ga.png" />
-                    </div>
-
-                    <div><h4>Misrab</h4></div>
-
-
-                    <div>
-                      <ul>
-                        <li>
-                          VP of Data Science at Go-Jek, building a team of over thirty data scientists and engineers across three countries at Indonesia’s first unicorn startup
-                        </li>
-                        <li>
-                          Stanford University graduate with Bachelor’s and Master’s degrees focused around computer science, economics and mathematics
-                        </li>
-                        <li>
-                          Previous experience includes teaching data science at General Assembly, auction dynamics at TripAdvisor, cryptographic theory and distributed ledger tech
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-
-
-                    <!--
-                    <div class="col-md-7 col-sm-12 wow fadeInLeft">
-                    	<div class="sub-heading">
-                    		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa recusandae consequatur veniam, reiciendis odit quia eaque vel eius a.</h3>
-                    	</div>
-                        <div class="block">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla-mco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, aspernatur.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
-                        <div class="about-slider">
-                        	<div class="init-slider">
-                        		<div class="about-item">
-                        			<img src="images/about/1.jpg" alt="" class="img-responsive">
-                        		</div>
-                        		<div class="about-item">
-                        			<img src="images/about/2.jpg" alt="" class="img-responsive">
-                        		</div>
-                        		<div class="about-item">
-                        			<img src="images/about/3.jpg" alt="" class="img-responsive">
-                        		</div>
-                        	</div>
-                        </div>
-                    </div>
-                    -->
-
-
-
-                </div>
-            </div>
-        </section><!-- #about close -->
-        <!--
-        About start
-        ==================== -->
-
-        <!--
-        Service start
-        ==================== -->
-
-        <!--
-        <section id="service" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="heading wow fadeInUp">
-                        <h2>Our service</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft">
-                        <div class="service">
-                            <div class="icon-box">
-                            	<span class="icon">
-                                    <i class="ion-android-desktop"></i>
-                                </span>
-                            </div>
-                            <div class="caption">
-                                <h3>Fully Responsive</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
-                        <div class="service">
-                            <div class="icon-box">
-                            	<span class="icon">
-                                    <i class="ion-speedometer"></i>
-                                </span>
-                            </div>
-                            <div class="caption">
-                            	<h3>Speed Optimized</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="service">
-                            <div class="icon-box">
-                            	<span class="icon">
-                                    <i class="ion-ios-infinite-outline"></i>
-                                </span>
-                            </div>
-                            <div class="caption">
-                                <h3>Tons of Feature</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="0.9s">
-                        <div class="service">
-                            <div class="icon-box">
-                            	<span class="icon">
-                                    <i class="ion-ios-cloud-outline"></i>
-                                </span>
-                            </div>
-                            <div class="caption">
-                                <h3>Cloud Option</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
-        <!--
-        <section id="call-to-action" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 wow text-center">
-                        <div class="block">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Your Email Address">
-                                <button class="btn btn-default btn-submit" type="submit">Get Notified</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-        <!-- #call-to-action close -->
-
-        <!--
-        Contact start
-        ==================== -->
-        <section id="contact" class="section" style="background-color: #f9f9f9;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="block">
-                            <div class="heading wow fadeInUp">
-                                <h2>Get In Touch</h2>
-                                <p>
-                                  If you're a <strong>real estate investor, lawyer, financial institution, estate agent, or proptech startup</strong>, we'd love to chat.
-                                </p>
-                                <center>
-                                  <!-- Send us an email at <strong>moubin@getground.co.uk</strong> or <strong>misrab@getground.co.uk</strong> -->
-
-
-
-                                  <form class="interest-form">
-                                    <div class="form-row">
-                                      <div class="col">
-                                        <input name="firstname" pattern=".{2,}" title="2 characters minimum" required type="text" class="form-control" placeholder="First name">
-                                      </div>
-                                      <div class="col">
-                                        <input name="lastname"  pattern=".{2,}" title="2 characters minimum" required type="text" class="form-control" placeholder="Last name">
-                                      </div>
-                                    </div>
-
-                                    <input name="email" required type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
-                                    <input name="phone" type="tel" class="form-control" placeholder="Phone (optional)">
-
-                                    <input name="profession" required  pattern=".{3,}" title="3 characters minimum" type="text" class="form-control" placeholder="Profession">
-                                    <textarea name="comment" class="form-control" placeholder="Any other comments (optional)"></textarea>
-
-                                    <button type="submit" class="btn btn-success">Register Interest</button>
-                                  </form>
-                                  <div class="thank-you alert-success">
-                                    Thank you for registering your interest
-                                  </div>
-
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-        </section>
-
-        <section clas="wow fadeInUp">
-        	<div class="map-wrapper">
-        	</div>
-        </section>
 
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block">
-                            <p>Copyright &copy; getGround | All rights reserved.</p>
-                        </div>
-                    </div>
+              <div class="row" style="text-align: center;">
+                  <div class="col-md-6">
+                    <img style="height: 80px; margin: 50px;" src="images/land-registry.png" alt="land-registry">
+                  </div>
+                  <div class="col-md-6">
+                    <img style="height: 80px; margin: 50px;" src="images/geovation.png" alt="land-registry">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <hr />
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                    <p><a href="">help@getground.co.uk</a></p>
+                    <p><a href="tel:+44123123123">+44 12312 123TODO</a></p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      terranova.network limited, trading as getGround, company registration number 11273793.
+                    </p>
+                    <p>
+                      Registered Office: 5 Theale Lakes Business Park, Moulden Way, Sulhamstead, Reading, RG7 4GB
+                    </p>
+                    <p>
+                      By continuing your visit to this site, you agree to the use of cookies.
+                      <a href="disclaimer">Website disclaimer</a>.
+                    </p>
+
+                    <p>
+                      Copyright &copy; getGround | All rights reserved.
+                    </p>
+                  </div>
                 </div>
             </div>
         </footer>
@@ -420,7 +198,6 @@
         <!-- Js -->
         <script src="vendor/modernizr-2.6.2.min.js"></script>
         <script src="vendor/jquery-1.10.2.min.js"></script>
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
         <script src="jquery.lwtCountdown-1.0.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="owl.carousel.min.js"></script>
