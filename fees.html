@@ -33,6 +33,8 @@
 
         <!-- CSS -->
 
+
+        <link rel="stylesheet" href="c3.min.css">
         <link rel="stylesheet" href="font-awesome.min.css">
         <link rel="stylesheet" href="owl.carousel.css">
         <link rel="stylesheet" href="animate.css">
@@ -44,6 +46,9 @@
 
         <!-- custom -->
         <style>
+          /*for c3 chart*/
+          .c3-axis .tick line {display: none;}
+
           ul {
             margin: 15px 0;
             list-style-type: square;
@@ -73,6 +78,36 @@
                   </div>
                 </div>
 	            </div><!-- .row close -->
+
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h2>Why our fees are so low, and your savings so high</h2>
+                </div>
+              </div>
+
+              <div style="margin-top: 90px;" class="row">
+                <div class="col-md-4">
+                  <h3 class="text-center">Our fees</h3>
+
+                  <ul>
+                    <li>Sign up fee of £1,495</li>
+                    <li>Monthly subscription of £20 per property</li>
+                    <li>No estate agent fee if selling to another investor; 1.5% otherwise</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <div id="chart"></div>
+                </div>
+                <div class="col-md-4">
+                  <h3 class="text-center">We can do this because</h3>
+
+                  <ul>
+                    <li>We use technology to automate and simplify processes</li>
+                    <li>We negotiate better deals with suppliers than an individual can do on their own</li>
+                    <li>We make intermediary fees (e.g. mortgage brokerage) that we pass on to you</li>
+                  </ul>
+                </div>
+              </div>
 	        </div><!-- .container close -->
 	    </section><!-- header close -->
 
@@ -135,6 +170,10 @@
         <script src="plugins.js"></script>
         <script src="wow.min.js"></script>
         <script src="main.js"></script>
+
+        <script src="d3.min.js"></script>
+        <script src="c3.min.js"></script>
+        <script src="fees.js"></script>
 
     </body>
 </html>

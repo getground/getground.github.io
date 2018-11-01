@@ -1,157 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js">
     <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124690101-1"></script>
+      <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'UA-124690101-1');
+      </script>
+
+
+
+
+
+
         <meta charset="utf-8">
-        <title>Page Not Found :(</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>getGround</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- <link rel="icon" href="favicon.ico?v=1.1" /> -->
+        <link rel="icon" type="image/png" href="favicon.png" />
+
+        <!-- Fonts -->
+        <!-- Lato -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="font-awesome.min.css">
+        <link rel="stylesheet" href="owl.carousel.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="responsive.css">
+
+
+        <!-- custom -->
         <style>
-            ::-moz-selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
-
-            ::selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
-
-            html {
-                padding: 30px 10px;
-                font-size: 20px;
-                line-height: 1.4;
-                color: #737373;
-                background: #f0f0f0;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-            }
-
-            html,
-            input {
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            body {
-                max-width: 500px;
-                _width: 500px;
-                padding: 30px 20px 50px;
-                border: 1px solid #b3b3b3;
-                border-radius: 4px;
-                margin: 0 auto;
-                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-                background: #fcfcfc;
-            }
-
-            h1 {
-                margin: 0 10px;
-                font-size: 50px;
-                text-align: center;
-            }
-
-            h1 span {
-                color: #bbb;
-            }
-
-            h3 {
-                margin: 1.5em 0 0.5em;
-            }
-
-            p {
-                margin: 1em 0;
-            }
-
-            ul {
-                padding: 0 0 0 40px;
-                margin: 1em 0;
-            }
-
-            .container {
-                max-width: 380px;
-                _width: 380px;
-                margin: 0 auto;
-            }
-
-            /* google search */
-
-            #goog-fixurl ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            #goog-fixurl form {
-                margin: 0;
-            }
-
-            #goog-wm-qt,
-            #goog-wm-sb {
-                border: 1px solid #bbb;
-                font-size: 16px;
-                line-height: normal;
-                vertical-align: top;
-                color: #444;
-                border-radius: 2px;
-            }
-
-            #goog-wm-qt {
-                width: 220px;
-                height: 20px;
-                padding: 5px;
-                margin: 5px 10px 0 0;
-                box-shadow: inset 0 1px 1px #ccc;
-            }
-
-            #goog-wm-sb {
-                display: inline-block;
-                height: 32px;
-                padding: 0 10px;
-                margin: 5px 0 0;
-                white-space: nowrap;
-                cursor: pointer;
-                background-color: #f5f5f5;
-                background-image: -webkit-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -moz-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -ms-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -o-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                *overflow: visible;
-                *display: inline;
-                *zoom: 1;
-            }
-
-            #goog-wm-sb:hover,
-            #goog-wm-sb:focus {
-                border-color: #aaa;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-                background-color: #f8f8f8;
-            }
-
-            #goog-wm-qt:hover,
-            #goog-wm-qt:focus {
-                border-color: #105cb6;
-                outline: 0;
-                color: #222;
-            }
-
-            input::-moz-focus-inner {
-                padding: 0;
-                border: 0;
-            }
+          ul {
+            margin: 15px 0;
+            list-style-type: square;
+            list-style-position: inside;
+          }
+          .omni-space {
+            margin: 15px 5px;
+          }
         </style>
     </head>
-    <body>
-        <div class="container">
-            <h1>Not found <span>:(</span></h1>
-            <p>Sorry, but the page you were trying to view does not exist.</p>
-            <p>It looks like this was the result of either:</p>
-            <ul>
-                <li>a mistyped address</li>
-                <li>an out-of-date link</li>
-            </ul>
-            <script>
-                var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
-            </script>
-            <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
-        </div>
+
+    <body id="body">
+
+
+
+	    <section id="hero-area">
+	        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                  <a href="index.html"><img style="height: 50px;" src="images/text-trimmed.png" alt="LOGO"></a>
+                  <!-- <h3 class="subtitle">How it works</h3> -->
+                </div>
+                <div class="col-md-6">
+                  <div style="text-align: right;">
+                    <button type="button" class="btn btn-primary">GET STARTED</button>
+                    <p class="call-us">Or call us at <a href="tel:+44123123123">+44 12312 123TODO</a></p>
+                  </div>
+                </div>
+	            </div><!-- .row close -->
+	        </div><!-- .container close -->
+	    </section><!-- header close -->
+
+
+
+
+
+        <footer>
+            <div class="container">
+              <div class="row" style="text-align: center;">
+                  <div class="col-md-6">
+                    <img style="height: 80px; margin: 50px;" src="images/land-registry.png" alt="land-registry">
+                  </div>
+                  <div class="col-md-6">
+                    <img style="height: 80px; margin: 50px;" src="images/geovation.png" alt="land-registry">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <hr />
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                    <p><a href="">help@getground.co.uk</a></p>
+                    <p><a href="tel:+44123123123">+44 12312 123TODO</a></p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      terranova.network limited, trading as getGround, company registration number 11273793.
+                    </p>
+                    <p>
+                      Registered Office: 5 Theale Lakes Business Park, Moulden Way, Sulhamstead, Reading, RG7 4GB
+                    </p>
+                    <p>
+                      By continuing your visit to this site, you agree to the use of cookies.
+                      <a href="disclaimer">Website disclaimer</a>.
+                    </p>
+
+                    <p>
+                      Copyright &copy; getGround | All rights reserved.
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Js -->
+        <script src="vendor/modernizr-2.6.2.min.js"></script>
+        <script src="vendor/jquery-1.10.2.min.js"></script>
+        <script src="jquery.lwtCountdown-1.0.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="owl.carousel.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
+        <script src="jquery.form.js"></script>
+        <script src="jquery.nav.js"></script>
+        <script src="jquery.sticky.js"></script>
+        <script src="plugins.js"></script>
+        <script src="wow.min.js"></script>
+        <script src="main.js"></script>
+
     </body>
 </html>

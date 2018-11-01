@@ -885,7 +885,13 @@ footer p a:hover {
 a {
   text-decoration: underline;
 }
-input, .input-group-addon, .alert {
+input, .input-group-prepend, .input-group-append, .alert, select {
+  border-radius: 0 !important;
+}
+.input-group-prepend .input-group-text {
+  border-radius: 0 !important;
+}
+.input-group-append .input-group-text {
   border-radius: 0 !important;
 }
 
@@ -895,6 +901,9 @@ input, .input-group-addon, .alert {
 .table th {
   font-weight: bold;
   font-size: 1.5em;
+}
+.table .list-td {
+  text-align: left;
 }
 .calculator {
   /*border: 1px solid gray;*/
@@ -915,6 +924,9 @@ input, .input-group-addon, .alert {
   text-align: justify;
   width: 100%;
 }
+
+
+
 /**, ::before, ::after {
     box-sizing: inherit;
     background-repeat: no-repeat;
@@ -932,7 +944,7 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-a.button {
+a.no-decoration {
     text-decoration: none;
 }
 
