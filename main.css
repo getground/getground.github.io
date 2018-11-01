@@ -889,23 +889,31 @@ input, .input-group-addon, .alert {
   border-radius: 0 !important;
 }
 
+/*.table td {
+  border-collapse: collapse;
+}*/
+.table th {
+  font-weight: bold;
+  font-size: 1.5em;
+}
 .calculator {
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
   padding: 90px 20px;
 }
 .call-us {
   font-size: 16px;
 }
 .bCOsdwa {
-    color: rgb(81, 96, 123);
-    font-size: 17px;
-    line-height: 32px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    max-width: 690px;
-    text-align: justify;
-    width: 100%;
+  /*margin-top: 30px;*/
+  color: rgb(81, 96, 123);
+  font-size: 17px;
+  line-height: 32px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  max-width: 690px;
+  text-align: justify;
+  width: 100%;
 }
 /**, ::before, ::after {
     box-sizing: inherit;
@@ -924,6 +932,13 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+a.button {
+    text-decoration: none;
+}
+
+/*.subtitle {
+  margin-top: 30px;
+}*/
 
 .left-right-space {
   margin: 0 5px;

@@ -22,6 +22,7 @@ function init() {
 }
 
 
+// TODO landing validation + calculation
 // #property-value-input
 // #ltv-input
 // #tax-bracket-select
