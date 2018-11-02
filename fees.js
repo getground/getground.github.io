@@ -1,10 +1,25 @@
+$.urlParam = function(name){
+  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href)
+  return results[1] || 0
+}
+
 $(document).ready(function(){
+  const DEFAULT_GAIN = 40000
+  let gain;
+  try {
+    gain = $.urlParam('gain')
+    if (isNaN(gain)) { gain = DEFAULT_GAIN }
+  } catch(err) {
+    console.log('No gain provided in url...')
+    gain = DEFAULT_GAIN
+  }
+
   var chart = c3.generate({
     bindto: '#chart',
     data: {
       columns: [
-        ['Your savings over 5 years', 40000],
-        ['Our fees', 3000]
+        ['Your savings over 5 years', gain],
+        ['Our fees', 3000] // TODO
       ],
       type: 'bar',
       labels: {

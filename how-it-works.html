@@ -170,7 +170,7 @@
                     </tbody>
                   </table>
 
-                  <a href="fees.html" style="float: right; width: 30%;" class="no-decoration btn btn-info">Find out our fees ></a>
+                  <a id="feesLink" href="fees.html" style="float: right; width: 30%;" class="no-decoration btn btn-info">Find out our fees ></a>
 
                 </div>
               </div>
@@ -212,7 +212,7 @@
                     </p>
                     <p>
                       By continuing your visit to this site, you agree to the use of cookies.
-                      <a href="disclaimer">Website disclaimer</a>.
+                      <a href="disclaimer.html">Website disclaimer</a>.
                     </p>
 
                     <p>
@@ -236,7 +236,24 @@
         <script src="jquery.sticky.js"></script>
         <script src="plugins.js"></script>
         <script src="wow.min.js"></script>
-        <script src="main.js"></script>
+        <!-- <script src="main.js"></script> -->
+        <script>
+          $.urlParam = function(name){
+          	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href)
+          	return results[1] || 0
+          }
+          $(document).ready(function() {
+            try {
+              let gain = $.urlParam('gain')
+              // console.log(gain)
+              $('#feesLink').attr('href', 'fees.html?gain='+gain)
+            } catch(err) {
+              console.log('No gain provided in url...')
+            }
+
+
+          })
+        </script>
 
     </body>
 </html>

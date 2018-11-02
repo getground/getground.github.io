@@ -911,6 +911,7 @@ input, .input-group-prepend, .input-group-append, .alert, select {
 }
 .call-us {
   font-size: 16px;
+  text-align: right;
 }
 .bCOsdwa {
   /*margin-top: 30px;*/

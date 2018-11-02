@@ -103,9 +103,9 @@
                                 <span class="input-group-text">£</span>
                               </div>
                               <input type="number" id="property-value-input" class="form-control text-left" value="250000">
-                              <!-- <div class="invalid-feedback">
+                              <div class="invalid-feedback">
                                 This should be the intended price of the property, in pounds sterling.
-                              </div> -->
+                              </div>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -115,18 +115,18 @@
                               <div class="input-group-append">
                                 <span class="input-group-text">%</span>
                               </div>
-                              <!-- <div class="invalid-feedback">
+                              <div class="invalid-feedback">
                                 This should be a value between 0-100.
-                              </div> -->
+                              </div>
                             </div>
                         </div>
                         <div style="margin-bottom: 25px;" class="form-group row">
                             <label class="col-sm-5 col-form-label">Your UK income tax bracket</label>
                             <div class="col-sm-7 input-group mb-3">
                               <select id="tax-bracket-select" class="form-control">
-                                <option value="0" selected>Higher rate</option>
+                                <option value="2" selected>Higher rate</option>
                                 <option value="1">Additional rate</option>
-                                <option value="2">Basic rate</option>
+                                <option value="0">Basic rate</option>
                               </select>
                             </div>
                         </div>
@@ -134,14 +134,14 @@
                         <div style="margin-top: 25px; font-size: 1.25em;" class="form-group row">
                             <label class="col-sm-5 col-form-label">Savings over 5 years</label>
                             <div class="col-sm-7 input-group mb-3">
-                              <div style="width: 100%;" class="alert alert-success text-center" role="alert">
+                              <div id="getGroundGain" style="width: 100%;" class="alert alert-success text-center" role="alert">
                                 £40,000
                               </div>
                             </div>
                         </div>
                       </form>
 
-                      <a href="how-it-works.html" style="width: 100%;" class="no-decoration btn btn-info">Find out how it works ></a>
+                      <a id="howItWorksLink" href="how-it-works.html" style="width: 100%;" class="no-decoration btn btn-info">Find out how it works ></a>
 
                     </div>
                   </div>
@@ -184,7 +184,7 @@
                     </p>
                     <p>
                       By continuing your visit to this site, you agree to the use of cookies.
-                      <a href="disclaimer">Website disclaimer</a>.
+                      <a href="disclaimer.html">Website disclaimer</a>.
                     </p>
 
                     <p>
