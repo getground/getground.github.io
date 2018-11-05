@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 function init() {
   $(window).resize(function() {
-    $('#hero-area').height($(window).height() - $('#hero-area').offset().top);
+    $('section').height($(window).height() - $('#hero-area').offset().top);
   });
   $(window).resize();
 }
