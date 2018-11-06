@@ -30,6 +30,9 @@
         <!-- Lato -->
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
 
         <!-- CSS -->
 
@@ -79,9 +82,8 @@
 
               <div class="row" style="margin-top: 30px;">
                 <div class="col-md-12 text-center">
-                  <h1>Puchasing a buy-to let?</h1>
-
-                  <h2>We make it easier and save you money.</h2>
+                  <h2>Puchasing a buy-to-let?</h2>
+                  <h1>We make it easier and save you money.</h1>
                 </div>
               </div>
 
@@ -94,7 +96,11 @@
 
               <div class="row">
                 <div style="text-align: center;" class="col-md-12">
-                  <a id="howItWorksLink" href="how-it-works.html" class="no-decoration btn btn-info">Find out how it works ></a>
+                  <div style="cursor: pointer;" class="scroll-to grey-bold" data-target="#how-much-save">
+                    LEARN MORE
+                    <i class="fas fa-chevron-down fa-4x" style="width: 100%; vertical-align: middle;"></i>
+                  </div>
+                  <!-- <a id="howItWorksLink" href="how-it-works.html" class="no-decoration btn btn-info">Find out how it works ></a> -->
                 </div>
               </div>
 
@@ -103,19 +109,19 @@
 	    </section>
 
       <!-- find out how we save -->
-      <section class="odd">
+      <section id="how-much-save" class="odd">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h2>Find out how much we can save you</h2>
+              <h1>Find out how much we can save you</h1>
             </div>
           </div>
-          <div class="row big-space-top">
+          <div class="row big-space-top text-center">
             <div class="col-md-6">
               <h3>Illustrative example: Apt Living Apartment in Gunnersbury*</h3>
 
 
-              <form>
+              <form class="form big-space-top text-left">
                 <div class="form-group row">
                     <label class="col-sm-5 col-form-label">Property value</label>
                     <div class="col-sm-7 input-group mb-3">
@@ -135,7 +141,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text">£</span>
                       </div>
-                      <input disabled type="number" id="ltv-input" class="form-control text-left" value="280000">
+                      <input disabled type="number" id="ltv-input" class="form-control text-left" value="240000">
                       <!-- <input type="number" id="ltv-input" class="form-control text-right" value="75"> -->
                       <!-- <div class="input-group-append">
                         <span class="input-group-text">%</span>
@@ -168,41 +174,72 @@
             </div>
             <div class="col-md-6">
               <h3>Your savings over 5 years</h3>
+
+              <div  class="big-space-top"id="savings-pie"></div>
             </div>
           </div>
 
           <div class="row big-space-top">
             <div class="col-md-12">
               <div style="color: grey;">
-                *Property purchased for £400k, with 70% loan-to-value at 4% interest rate. Investor is a UK Higher Rate tax earner. The property has a gross rental yield of 5% with running costs of 20% gross rent p.a. and service charge with ground rent of £1,500 p.a. The investor holds the investment for 5 years with 3% property price growth p.a. in all cases. Investor personal exit costs include an estate agent fee of 1.5% of property sale value and legal conveyancing costs. The investment is sold to another property investor on the getGround platform. Savings shown relative to personal ownership.
+                *Property purchased for £400k, with 60% loan-to-value at 4% interest rate. Investor is a UK Higher Rate tax earner. The property has a gross rental yield of 4% with running costs of 20% gross rent p.a. and service charge with ground rent of £3,000 p.a. The investor holds the investment for 5 years with 3% property price growth p.a.. Investor personal exit costs include an estate agent fee of 1.5% of property sale value and legal conveyancing costs. The investment is sold to another property investor on the getGround platform. Savings shown relative to personal ownership.
+              </div>
+            </div>
+          </div>
+
+          <div class="row big-space-top">
+            <div style="text-align: center;" class="col-md-12">
+              <div>
+                <button type="button" class="btn btn-primary">GET STARTED</button>
+                or
+                <button type="button" data-target="#how-it-works" class="scroll-to btn btn-secondary">FIND OUT HOW IT WORKS <i class="fas fa-chevron-down" style="display: inline; width: 100%; vertical-align: middle;"></i></button>
+              </div>
+
+              <!-- <button type="button" class="btn btn-primary">GET STARTED</button>
+              <div class="margin: 20px 0;">OR</div>
+              <div style="cursor: pointer;" class="scroll-to grey-bold" data-target="#how-it-works">
+                FIND OUT HOW IT WORKS
+                <i class="fas fa-chevron-down fa-4x" style="width: 100%; vertical-align: middle;"></i>
+              </div> -->
+              <!-- <a id="howItWorksLink" href="how-it-works.html" class="no-decoration btn btn-info">Find out how it works ></a> -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- how it works -->
+      <section id="how-it-works" class="even">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>You're in control, without the hassle</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img style="margin-top: 60px; width: 100%;" src="images/what-we-do.png" alt="WHAT WE DO">
+            </div>
+          </div>
+          <div class="row big-space-top">
+            <div style="text-align: center;" class="col-md-12">
+              <div>
+                <button type="button" class="btn btn-primary">GET STARTED</button>
+                or
+                <button type="button" data-target="#fees" class="scroll-to btn btn-secondary">FIND OUT OUR FEES <i class="fas fa-chevron-down" style="display: inline; width: 100%; vertical-align: middle;"></i></button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- how it works -->
-      <section class="even">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h2>How we work for you, so you can do what you love</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <img style="margin-top: 60px;" src="images/what-we-do.png" alt="WHAT WE DO">
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- fees -->
-      <section class="odd">
+      <section id="fees" class="odd">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h2>Technology and scale keep our fees low, and your savings high</h2>
+              <h1>Technology and scale keep our fees low, and your savings high</h1>
             </div>
           </div>
           <div class="row">
@@ -226,7 +263,7 @@
                       <span class="badge badge-secondary"><h4>0%</h4></span>
                     </div>
                     <div class="col-md-8 text-right">
-                      estate agent fee if selling to another investor; 1.5% otherwise
+                      estate agent fee if selling to another getGround investor; 1.5% otherwise
                     </div>
                   </div>
                 </li>
@@ -236,7 +273,7 @@
                       <span class="badge badge-secondary"><h4>£328 / £888 / £2,888</h4></span>
                     </div>
                     <div class="col-md-8 text-right">
-                      signup fee if buying with cash / a 2 year fixed mortgage / a 5 year fixed mortgage
+                      sign-up fee if buying with cash OR a 2-year fixed mortgage OR a 5-year fixed mortgage
                     </div>
                   </div>
                 </li>
@@ -252,7 +289,24 @@
             </div>
             <div class="col-md-6">
               <!-- <span class="align-bottom">fooo</span> -->
-              <div id="chart"></div>
+              <center><h3>Over 5 years</h3></center>
+              <div id="savings-histogram" class="full-width"></div>
+
+              <div class="big-space-top" style="color: grey;">
+                *getGround fees assume sign-up fee of £2,888 for 5-year fixed mortgage deal and £240 per year for the monthly subscription. The investment is sold to another property investor on the getGround platform.
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row big-space-top">
+            <div class="col-md-12">
+
+            </div>
+          </div> -->
+
+          <div class="row big-space-top">
+            <div style="text-align: center;" class="col-md-12">
+              <button type="button" class="btn btn-primary">GET STARTED</button>
             </div>
           </div>
         </div>
@@ -276,7 +330,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                  <p><a href="">help@getground.co.uk</a></p>
+                  <p><a href="">info@getground.co.uk</a></p>
                   <p><a href="tel:+44123123123">+44 12312 123TODO</a></p>
                 </div>
                 <div class="col-md-6">
